@@ -47,6 +47,9 @@
 
 ---
 
+<img width="1362" height="905" alt="Screenshot 2026-10-23 at 3 34 26 PM" src="https://github.com/user-attachments/assets/714a84f9-5374-46ff-a468-76ecd8961124" />
+
+
 ## 🚀 Quick Start
 
 ### 1. Clone & Install Dependencies
@@ -67,6 +70,7 @@ Open [http://localhost:5173](http://localhost:5173) in your browser.
 npm run build
 npm run preview
 ```
+<img width="1362" height="905" alt="Screenshot 2026-10-23 at 3 33 53 PM" src="https://github.com/user-attachments/assets/bf551331-009e-4eaa-bf47-9eb29ea21ae9" />
 
 ---
 
