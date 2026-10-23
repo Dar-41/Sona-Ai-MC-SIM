@@ -1,0 +1,79 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  :root {
+    color-scheme: dark;
+  }
+  
+  body {
+    background-color: #0B0C10;
+    color: #FFFFFF;
+    font-family: 'Satoshi', 'Plus Jakarta Sans', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+  }
+}
+
+/* Custom scrollbar matching Fluxo dark aesthetic */
+::-webkit-scrollbar {
+  width: 6px;
+  height: 6px;
+}
+
+::-webkit-scrollbar-track {
+  background: #0E0F15;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #252837;
+  border-radius: 9999px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #3B3F54;
+}
+
+/* Glassmorphism & card glows */
+.flux-card {
+  background: #14161F;
+  border: 1px solid #1F222E;
+  border-radius: 18px;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.35);
+  transition: all 0.25s cubic-bezier(0.16, 1, 0.3, 1);
+}
+
+.flux-card:hover {
+  border-color: #2D3145;
+  box-shadow: 0 14px 40px rgba(0, 0, 0, 0.45);
+}
+
+.flux-card-active {
+  border-color: rgba(255, 87, 34, 0.4);
+  box-shadow: 0 0 25px rgba(255, 87, 34, 0.12);
+}
+
+/* Range input slider styling */
+input[type="range"] {
+  -webkit-appearance: none;
+  appearance: none;
+  background: #212433;
+  border-radius: 9999px;
+  height: 6px;
+  outline: none;
+}
+
+input[type="range"]::-webkit-slider-thumb {
+  -webkit-appearance: none;
+  appearance: none;
+  width: 16px;
+  height: 16px;
+  border-radius: 50%;
+  background: #FF5722;
+  cursor: pointer;
+  box-shadow: 0 0 10px rgba(255, 87, 34, 0.8);
+  transition: transform 0.1s ease;
+}
+
+input[type="range"]::-webkit-slider-thumb:hover {
+  transform: scale(1.2);
+}
